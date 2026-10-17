@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Voice Follow Teleprompter</string>
+    <string name="script_hint">Type or paste your script here…</string>
+    <string name="start">Start teleprompter</string>
+    <string name="import_text">Open text file</string>
+    <string name="language">Speech language</string>
+    <string name="clear">Clear text</string>
+    <string name="clear_confirm">Are you sure you want to clear the text?</string>
+    <string name="yes">Yes</string>
+    <string name="cancel">Cancel</string>
+    <string name="empty_script">Enter a script first.</string>
+    <string name="import_failed">Could not read the file.</string>
+    <string name="word_count">%1$d words · approx. %2$d min</string>
+    <string name="sample_script">Welcome to Voice Follow Teleprompter.\n\nType or paste your own script here and press Start. Then simply read your text aloud: the teleprompter listens and scrolls along with your voice.\n\nIf you skip a sentence, the text jumps along automatically. Tap the screen to show or hide the controls. You can also drag the text with your finger to continue from another spot.</string>
+
+    <string name="mode_voice">Voice</string>
+    <string name="mode_auto">Auto</string>
+    <string name="play">Start</string>
+    <string name="pause">Pause</string>
+    <string name="mirror">Mirror</string>
+    <string name="to_top">To start</string>
+    <string name="close">Close</string>
+    <string name="text_smaller">Smaller text</string>
+    <string name="text_larger">Larger text</string>
+    <string name="slower">Slower</string>
+    <string name="faster">Faster</string>
+    <string name="state_listening">Listening…</string>
+    <string name="state_hearing">Hearing you</string>
+    <string name="state_paused">Paused – tap Start</string>
+    <string name="state_auto">Auto scrolling · speed %1$d</string>
+    <string name="state_not_available">Speech recognition is not available on this device. Install or enable the Google app, or use Auto.</string>
+    <string name="state_no_permission">Microphone access is needed to follow your voice.</string>
+    <string name="state_finished">End of script</string>
+    <string name="permission_rationale">The teleprompter only uses the microphone to recognise where you are in your script. Nothing is recorded or stored.</string>
+    <string name="open_settings">Settings</string>
+</resources>

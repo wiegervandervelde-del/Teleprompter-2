@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Stemvolger Teleprompter</string>
+    <string name="script_hint">Typ of plak hier je tekst…</string>
+    <string name="start">Start teleprompter</string>
+    <string name="import_text">Tekstbestand openen</string>
+    <string name="language">Spraaktaal</string>
+    <string name="clear">Tekst wissen</string>
+    <string name="clear_confirm">Weet je zeker dat je de tekst wilt wissen?</string>
+    <string name="yes">Ja</string>
+    <string name="cancel">Annuleren</string>
+    <string name="empty_script">Voer eerst een tekst in.</string>
+    <string name="import_failed">Kon het bestand niet lezen.</string>
+    <string name="word_count">%1$d woorden · ca. %2$d min</string>
+    <string name="sample_script">Welkom bij Stemvolger Teleprompter.\n\nTyp of plak je eigen tekst hier en druk op Start. Spreek daarna gewoon je tekst uit: de teleprompter luistert mee en scrollt automatisch met je stem mee.\n\nSla je een zin over, dan springt de tekst vanzelf mee. Tik op het scherm om de bediening te tonen of te verbergen. Je kunt de tekst ook met je vinger verschuiven om op een andere plek verder te gaan.</string>
+
+    <string name="mode_voice">Stem</string>
+    <string name="mode_auto">Auto</string>
+    <string name="play">Start</string>
+    <string name="pause">Pauze</string>
+    <string name="mirror">Spiegelen</string>
+    <string name="to_top">Naar begin</string>
+    <string name="close">Sluiten</string>
+    <string name="text_smaller">Tekst kleiner</string>
+    <string name="text_larger">Tekst groter</string>
+    <string name="slower">Langzamer</string>
+    <string name="faster">Sneller</string>
+    <string name="state_listening">Luistert…</string>
+    <string name="state_hearing">Hoort je</string>
+    <string name="state_paused">Gepauzeerd – tik op Start</string>
+    <string name="state_auto">Automatisch scrollen · snelheid %1$d</string>
+    <string name="state_not_available">Spraakherkenning is niet beschikbaar op dit toestel. Installeer of activeer de Google-app, of gebruik Auto.</string>
+    <string name="state_no_permission">Microfoontoegang is nodig om je stem te volgen.</string>
+    <string name="state_finished">Einde van de tekst</string>
+    <string name="permission_rationale">De teleprompter gebruikt de microfoon alleen om te herkennen waar je in je tekst bent. Er wordt niets opgenomen of opgeslagen.</string>
+    <string name="open_settings">Instellingen</string>
+</resources>

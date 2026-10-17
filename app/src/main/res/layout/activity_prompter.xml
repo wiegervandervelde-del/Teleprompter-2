@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:keepScreenOn="true">
+
+    <!-- Everything in here is mirrored for use behind teleprompter glass. -->
+    <FrameLayout
+        android:id="@+id/mirrorContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:id="@+id/scroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never"
+            android:scrollbars="none">
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingMultiplier="1.15"
+                android:paddingHorizontal="28dp"
+                android:textColor="@color/prompt_text"
+                android:textStyle="bold" />
+        </ScrollView>
+
+        <ImageView
+            android:id="@+id/marker"
+            android:layout_width="16dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="4dp"
+            android:importantForAccessibility="no"
+            android:src="@drawable/reading_marker" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/controls"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/controls_bg"
+        android:orientation="vertical"
+        android:paddingHorizontal="8dp"
+        android:paddingVertical="8dp">
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="4dp"
+            android:textColor="#DDDDDD"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/close"
+                style="@style/PrompterButton"
+                android:contentDescription="@string/close"
+                android:src="@drawable/ic_close" />
+
+            <ImageButton
+                android:id="@+id/toTop"
+                style="@style/PrompterButton"
+                android:contentDescription="@string/to_top"
+                android:src="@drawable/ic_to_top" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/playPause"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:contentDescription="@string/play"
+                android:src="@drawable/ic_play"
+                app:backgroundTint="@color/brand"
+                app:tint="@android:color/white" />
+
+            <com.google.android.material.button.MaterialButtonToggleGroup
+                android:id="@+id/modeGroup"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:selectionRequired="true"
+                app:singleSelection="true">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/modeVoice"
+                    style="@style/Widget.Material3.Button.OutlinedButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/mode_voice" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/modeAuto"
+                    style="@style/Widget.Material3.Button.OutlinedButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/mode_auto" />
+            </com.google.android.material.button.MaterialButtonToggleGroup>
+
+            <ImageButton
+                android:id="@+id/mirror"
+                style="@style/PrompterButton"
+                android:contentDescription="@string/mirror"
+                android:src="@drawable/ic_flip" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/textSmaller"
+                style="@style/PrompterButton"
+                android:contentDescription="@string/text_smaller"
+                android:src="@drawable/ic_text_smaller" />
+
+            <ImageButton
+                android:id="@+id/textLarger"
+                style="@style/PrompterButton"
+                android:contentDescription="@string/text_larger"
+                android:src="@drawable/ic_text_larger" />
+
+            <Space
+                android:layout_width="32dp"
+                android:layout_height="1dp" />
+
+            <ImageButton
+                android:id="@+id/slower"
+                style="@style/PrompterButton"
+                android:contentDescription="@string/slower"
+                android:src="@drawable/ic_slower" />
+
+            <ImageButton
+                android:id="@+id/faster"
+                style="@style/PrompterButton"
+                android:contentDescription="@string/faster"
+                android:src="@drawable/ic_faster" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

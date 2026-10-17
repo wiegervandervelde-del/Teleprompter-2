@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="brand">#C62828</color>
+    <color name="brand_light">#FF8A80</color>
+    <color name="prompt_text">#FFFFFF</color>
+    <color name="prompt_spoken">#5E5E5E</color>
+    <color name="prompt_current">#FFD54F</color>
+    <color name="controls_bg">#CC111111</color>
+    <color name="ic_launcher_background">#1B1B1F</color>
+</resources>
